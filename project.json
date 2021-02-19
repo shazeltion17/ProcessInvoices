@@ -82,8 +82,8 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "b4fc8b5a-6a49-4de4-9ac6-7275c501d4ea",
-        "fileName": "AutomationTestScenario.xaml"
+        "testCaseId": "c32d8e52-b044-477d-9fc1-c5931eaf15ea",
+        "fileName": "test_InitializeApplications.xaml"
       }
     ],
     "modernBehavior": true
