@@ -1,0 +1,12 @@
+﻿{
+  "Id": "mJh7rBZUZEenJcq6RQ4PBA",
+  "Reference": "bugZPJhYIE6H-JeT3uEzBg/mJh7rBZUZEenJcq6RQ4PBA",
+  "ParentRef": "bugZPJhYIE6H-JeT3uEzBg/_2ts_jm3kUKdwe0SCqhE-w",
+  "Name": "IE: ACME System 1 - Dashboard",
+  "Type": "Screen",
+  "Created": "2021-02-18T22:24:02.0895013Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-02-18T22:24:02.0895013Z"
+}

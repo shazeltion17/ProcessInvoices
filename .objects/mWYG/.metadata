@@ -1,0 +1,11 @@
+﻿{
+  "Id": "mWYG1Q7Yn0qHCs76ZzaQug",
+  "Reference": "bugZPJhYIE6H-JeT3uEzBg/mWYG1Q7Yn0qHCs76ZzaQug",
+  "Name": "IE: ACME System 1 - Dashboard app",
+  "Type": "App",
+  "Created": "2021-02-18T22:24:02.0255929Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-02-18T22:24:02.0255929Z"
+}

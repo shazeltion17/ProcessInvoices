@@ -1,0 +1,12 @@
+﻿{
+  "Id": "Ivmy1z6s8UKcoCI4fQZ6dg",
+  "Reference": "bugZPJhYIE6H-JeT3uEzBg/Ivmy1z6s8UKcoCI4fQZ6dg",
+  "ParentRef": "bugZPJhYIE6H-JeT3uEzBg/aiSrKku_D02L91dJpZgKdg",
+  "Name": "IE: ACME System 1 - Log In",
+  "Type": "Screen",
+  "Created": "2021-02-18T22:16:58.8296742Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-02-18T22:16:58.8296742Z"
+}

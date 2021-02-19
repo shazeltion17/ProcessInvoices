@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="https://acme-test.uipath.com/" ContentHash="ayyfC81svE-nTRmeN1IsxA" DesignTimeRectangle="0, 0, 0, 0" ElementType="Text" FriendlyName="'Add Invoice Details'" FullSelectorArgument="&lt;webctrl aaname='Add Invoice Details' parentid='dashmenu' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Add Invoice Details' parentid='dashmenu' tag='A' type='' check:text='Add Invoice Details' /&gt;" ScopeSelectorArgument="&lt;html title='ACME System 1 - Dashboard' /&gt;" SearchSteps="FuzzySelector, Image" Text="Add Invoice Details" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='A' type='' /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">08riFV1O_OESYGGvGjz0_nQ</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="88da15fbdbcbd4052be0540ae0d98ba5.png" xmlns="">0n_bi1TuhBUeyqESLVoVocA</imageRef>
+</TargetAnchorable>

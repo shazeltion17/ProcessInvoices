@@ -1,0 +1,13 @@
+﻿{
+  "Id": "vMKcsHaPZU-XBLF5Tbibhw",
+  "Reference": "bugZPJhYIE6H-JeT3uEzBg/vMKcsHaPZU-XBLF5Tbibhw",
+  "ParentRef": "bugZPJhYIE6H-JeT3uEzBg/mJh7rBZUZEenJcq6RQ4PBA",
+  "Name": "Invoices",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Created": "2021-02-18T22:24:02.1740735Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=20.10.4.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-02-18T22:24:02.1740735Z"
+}
