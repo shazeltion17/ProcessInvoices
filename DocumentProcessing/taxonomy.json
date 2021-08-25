@@ -1296,6 +1296,21 @@
               "Value": "true"
             }
           ]
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.Vendor",
+          "FieldName": "Vendor",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "RequiresReference",
+              "Value": "true"
+            }
+          ]
         }
       ]
     },
