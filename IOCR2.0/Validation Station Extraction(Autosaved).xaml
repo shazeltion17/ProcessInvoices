@@ -6,7 +6,7 @@
     <x:Null />
   </mva:VisualBasic.Settings>
   <sap:VirtualizedContainerService.HintSize>1092,1031.33333333333</sap:VirtualizedContainerService.HintSize>
-  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="122">
       <x:String>System.Activities</x:String>
@@ -163,7 +163,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         <av:Point x:Key="ShapeLocation">220,12.5</av:Point>
         <av:Size x:Key="ShapeSize">60,74.6666666666667</av:Size>
-        <av:PointCollection x:Key="ConnectorLocation">280,49.8333333333333 310,49.8333333333333 310,42.3333333333333 430,42.3333333333333</av:PointCollection>
+        <av:PointCollection x:Key="ConnectorLocation">280,49.8333333333333 310,49.8333333333333 310,50 430,50</av:PointCollection>
         <x:Double x:Key="Width">738</x:Double>
         <x:Double x:Key="Height">931</x:Double>
       </scg:Dictionary>
@@ -174,9 +174,9 @@
     <FlowStep x:Name="__ReferenceID3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">430,16</av:Point>
+          <av:Point x:Key="ShapeLocation">430,23.6666666666667</av:Point>
           <av:Size x:Key="ShapeSize">200,52.6666666666667</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">530,68.6666666666667 530,149</av:PointCollection>
+          <av:PointCollection x:Key="ConnectorLocation">530,76.3333333333333 530,149</av:PointCollection>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke initializeApplications workflow" sap:VirtualizedContainerService.HintSize="200,52.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="initializeApplications.xaml">
@@ -345,9 +345,9 @@
                         <scg:List x:TypeArguments="x:String" Capacity="0" />
                       </p5:MachineLearningExtractor.AvailableMLSkills>
                       <p5:MachineLearningExtractor.DocumentBounds>
-                        <InArgument x:TypeArguments="p6:ResultsDocumentBounds">
-                          <DelegateArgumentValue x:TypeArguments="p6:ResultsDocumentBounds">
-                            <DelegateInArgument x:TypeArguments="p6:ResultsDocumentBounds" Name="DocumentBounds" />
+                        <InArgument x:TypeArguments="p7:ResultsDocumentBounds">
+                          <DelegateArgumentValue x:TypeArguments="p7:ResultsDocumentBounds">
+                            <DelegateInArgument x:TypeArguments="p7:ResultsDocumentBounds" Name="DocumentBounds" />
                           </DelegateArgumentValue>
                         </InArgument>
                       </p5:MachineLearningExtractor.DocumentBounds>
@@ -373,16 +373,16 @@
                         </InArgument>
                       </p5:MachineLearningExtractor.DocumentText>
                       <p5:MachineLearningExtractor.ExtractorDocumentType>
-                        <InArgument x:TypeArguments="p7:ExtractorDocumentType">
-                          <DelegateArgumentValue x:TypeArguments="p7:ExtractorDocumentType">
-                            <DelegateInArgument x:TypeArguments="p7:ExtractorDocumentType" Name="ExtractorDocumentType" />
+                        <InArgument x:TypeArguments="p6:ExtractorDocumentType">
+                          <DelegateArgumentValue x:TypeArguments="p6:ExtractorDocumentType">
+                            <DelegateInArgument x:TypeArguments="p6:ExtractorDocumentType" Name="ExtractorDocumentType" />
                           </DelegateArgumentValue>
                         </InArgument>
                       </p5:MachineLearningExtractor.ExtractorDocumentType>
                       <p5:MachineLearningExtractor.ExtractorResult>
-                        <OutArgument x:TypeArguments="p7:ExtractorResult">
-                          <DelegateArgumentReference x:TypeArguments="p7:ExtractorResult">
-                            <DelegateOutArgument x:TypeArguments="p7:ExtractorResult" Name="ExtractorResult" />
+                        <OutArgument x:TypeArguments="p6:ExtractorResult">
+                          <DelegateArgumentReference x:TypeArguments="p6:ExtractorResult">
+                            <DelegateOutArgument x:TypeArguments="p6:ExtractorResult" Name="ExtractorResult" />
                           </DelegateArgumentReference>
                         </OutArgument>
                       </p5:MachineLearningExtractor.ExtractorResult>
