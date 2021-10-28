@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>905.333333333333,1131.33333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1121.33333333333,1031.33333333333</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="122">
@@ -223,7 +223,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Transaction Item" sap:VirtualizedContainerService.HintSize="982,22" sap2010:WorkflowViewState.IdRef="GetQueueItem_2" QueueType="InvoiceProcessing" TransactionItem="[transaction_item]" />
-                <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CompletedFileLocation" DisplayName="Get Asset" sap:VirtualizedContainerService.HintSize="982,140.666666666667" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
+                <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="CompletedFileLocation" DisplayName="Get Asset" FolderPath="Finance" sap:VirtualizedContainerService.HintSize="982,140.666666666667" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
                   <ui:GetRobotAsset.Value>
                     <OutArgument x:TypeArguments="x:String">[completed_file_location]</OutArgument>
                   </ui:GetRobotAsset.Value>
@@ -462,7 +462,7 @@
                             <InArgument x:TypeArguments="uiaam:DocumentValidationActionData">[outputstation]</InArgument>
                           </Assign.Value>
                         </Assign>
-                        <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;http://platform.uipath.com/southcentral/southcentral/actions_/tasks/&quot; + outputstation.Id.ToString]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="478,149.333333333333" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" IsBodyHtml="False" IsDraft="False" Subject="Validation" To="samuel.ehrlich@uipath.com">
+                        <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" MailMessage="{x:Null}" TimeoutMS="{x:Null}" Body="[&quot;https://cloud.uipath.com/velo/Production/actions_/tasks/&quot; + outputstation.Id.ToString]" DisplayName="Send Outlook Mail Message" sap:VirtualizedContainerService.HintSize="478,149.333333333333" sap2010:WorkflowViewState.IdRef="SendOutlookMail_1" IsBodyHtml="False" IsDraft="False" Subject="Validation" To="samuel.ehrlich@uipath.com">
                           <ui:SendOutlookMail.Files>
                             <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
                           </ui:SendOutlookMail.Files>
