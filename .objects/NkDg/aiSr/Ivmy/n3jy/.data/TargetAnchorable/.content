@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-16"?>
-<TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" ContentHash="EfCioqLpEE-mBoXqtNUegQ" DesignTimeRectangle="199, 445, 728, 51" ElementType="InputBox" FriendlyName="'INPUT  email'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' aaname='Email:' /&gt;" ScopeSelectorArgument="&lt;html title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" ContentHash="__FhELpXWkCTJSj7ACyvZg" DesignTimeRectangle="209, 610, 728, 51" ElementType="InputBox" FriendlyName="'INPUT email'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='email' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='email' aaname='Email:' /&gt;" Guid="1c68c33d-5a35-4dee-ad81-ea420364ef8d" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TargetAnchorable.Anchors>
     <scg:List x:TypeArguments="ITarget" Capacity="4">
-      <Target DesignTimeRectangle="199, 408, 63, 30" ElementType="Text" FriendlyName="'Email:'" FullSelectorArgument="&lt;webctrl idx='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='LABEL' aaname='Email:' check:text='Email:' /&gt;" SearchSteps="FuzzySelector, Image" Text="Email:" TextMethod="AttributeText" TextSelector="&lt;webctrl type='' tag='LABEL' /&gt;">
-        <imageRef attrName="ImageBase64" xmlns="">1rPX491l1rEu9JKp9VdBDkA</imageRef>
+      <Target DesignTimeRectangle="209, 573, 63, 30" ElementType="Text" FriendlyName="'Email'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' aaname='Email:' check:text='Email:' /&gt;" SearchSteps="FuzzySelector, Image">
+        <imageRef attrName="ImageBase64" xmlns="">13eL92irickuPf2E5i73fsA</imageRef>
       </Target>
     </scg:List>
   </TargetAnchorable.Anchors>
-  <imageRef attrName="ImageBase64" xmlns="">0Iqj768NM3kekTp-i3XutNg</imageRef>
-  <imageRef attrName="InformativeScreenshot" originalValue="afa7ec098ab86f4a8e97267b3af89eed.png" xmlns="">0c-4fVik4TU-qh23eHa0-uA</imageRef>
+  <imageRef attrName="ImageBase64" xmlns="">0Z9BzPDAzSEy_8rq9TxyJ2w</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="f927210eb825e93e305448208d04555f.png" xmlns="">097uOF-btVkOOnwQ6LP6QuQ</imageRef>
 </TargetAnchorable>

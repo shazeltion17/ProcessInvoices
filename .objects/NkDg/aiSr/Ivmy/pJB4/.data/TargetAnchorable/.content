@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-16"?>
-<TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" ContentHash="ZS275mJugECefZZTO741pw" DesignTimeRectangle="199, 691, 90, 51" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='Login' check:text='Login' /&gt;" ScopeSelectorArgument="&lt;html title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, Image" Text="Login" TextMethod="AttributeText" TextSelector="&lt;webctrl tag='BUTTON' type='submit' /&gt;" xmlns="http://schemas.uipath.com/workflow/activities/uix">
-  <imageRef attrName="ImageBase64" xmlns="">0vIBYdfqixEC0i_3MZWpnEg</imageRef>
-  <imageRef attrName="InformativeScreenshot" originalValue="cfef1f8aa07ed75b58382e8e9159e0b1.png" xmlns="">0STLkBzBHTEuDZN1YDubLbg</imageRef>
+<TargetAnchorable BrowserURL="https://acme-test.uipath.com/login" ContentHash="0-Kk0En9AU-f6ZpqKsN2Fw" DesignTimeRectangle="209, 857, 90, 51" ElementType="Button" FriendlyName="'Login'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' aaname='                             Login                         ' check:text='Login' /&gt;" Guid="06a6bf84-7fc9-46d5-aa9e-39d469bd0ed9" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ACME System 1 - Log In' /&gt;" SearchSteps="FuzzySelector, Image" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="ImageBase64" xmlns="">0CCvyJ-FG_E28WeCPC1Feeg</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="3dfeaba6931a7f58b5d8e0fdbcb5e739.png" xmlns="">0oNykTo6meEevXxzFPsuedQ</imageRef>
 </TargetAnchorable>

@@ -2,19 +2,19 @@
   "DataContractVersion": "1.1",
   "DocumentTypes": [
     {
-      "DocumentTypeId": "Flexi.Invoice",
-      "Group": "Invoices",
-      "Category": "Telephone Carriers",
-      "Name": "Sprint_Invoice",
+      "DocumentTypeId": "Adaugio.MedicalDoc.AthenaHealth",
+      "Group": "Adaugio",
+      "Category": "MedicalDoc",
+      "Name": "AthenaHealth",
       "OptionalUniqueIdentifier": "",
       "TypeField": {
-        "FieldId": "Flexi.Invoice.DocumentType",
+        "FieldId": "Adaugio.MedicalDoc.AthenaHealth.DocumentType",
         "FieldName": "Document Type"
       },
       "Fields": [
         {
-          "FieldId": "Flexi.Invoice.InvoiceNumber",
-          "FieldName": "InvoiceNumber",
+          "FieldId": "Adaugio.MedicalDoc.AthenaHealth.PatientName",
+          "FieldName": "PatientName",
           "IsMultiValue": false,
           "Type": "Text",
           "DeriveFieldsFormat": "",
@@ -23,8 +23,71 @@
           "Metadata": []
         },
         {
-          "FieldId": "Flexi.Invoice.InvoiceDate",
-          "FieldName": "InvoiceDate",
+          "FieldId": "Adaugio.MedicalDoc.AthenaHealth.DateofBirth",
+          "FieldName": "DateofBirth",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Adaugio.MedicalDoc.AthenaHealth.Sex",
+          "FieldName": "Sex",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Adaugio.MedicalDoc.AthenaHealth.ICD-10",
+          "FieldName": "ICD-10",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle",
+      "Group": "CertificateoFTitle",
+      "Category": "Oregon",
+      "Name": "CarTitle",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.CertificateNo",
+          "FieldName": "Certificate No.",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.TitleNumber",
+          "FieldName": "Title Number",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.DateIssued",
+          "FieldName": "Date Issued",
           "IsMultiValue": false,
           "Type": "Date",
           "DeriveFieldsFormat": "",
@@ -33,8 +96,8 @@
           "Metadata": []
         },
         {
-          "FieldId": "Flexi.Invoice.Company",
-          "FieldName": "Company",
+          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.Manufacturer",
+          "FieldName": "Manufacturer",
           "IsMultiValue": false,
           "Type": "Text",
           "DeriveFieldsFormat": "",
@@ -43,8 +106,8 @@
           "Metadata": []
         },
         {
-          "FieldId": "Flexi.Invoice.Company_ID",
-          "FieldName": "Company_ID",
+          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.ModelYr",
+          "FieldName": "Make",
           "IsMultiValue": false,
           "Type": "Text",
           "DeriveFieldsFormat": "",
@@ -53,8 +116,31 @@
           "Metadata": []
         },
         {
-          "FieldId": "Flexi.Invoice.TotalAmount",
-          "FieldName": "TotalAmount",
+          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.Year",
+          "FieldName": "Year",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "CertificateoFTitle.Oregon.BoatTitle",
+      "Group": "CertificateoFTitle",
+      "Category": "Oregon",
+      "Name": "BoatTitle",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "CertificateoFTitle.Oregon.BoatTitle.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "CertificateoFTitle.Oregon.BoatTitle.CertNo",
+          "FieldName": "Cert No.",
           "IsMultiValue": false,
           "Type": "Number",
           "DeriveFieldsFormat": "",
@@ -63,15 +149,48 @@
           "Metadata": []
         },
         {
-          "FieldId": "Flexi.Invoice.InvoiceTable",
-          "FieldName": "InvoiceTable",
+          "FieldId": "CertificateoFTitle.Oregon.BoatTitle.TitleNumber",
+          "FieldName": "TitleNumber",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Denistry.Claims.ADAAmericanDental",
+      "Group": "Denistry",
+      "Category": "Claims",
+      "Name": "ADA American Dental",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Denistry.Claims.ADAAmericanDental.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Denistry.Claims.ADAAmericanDental.InsuranceCompany",
+          "FieldName": "InsuranceCompany",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService",
+          "FieldName": "RecordofService",
           "IsMultiValue": false,
           "Type": "Table",
           "DeriveFieldsFormat": "",
           "Components": [
             {
-              "FieldId": "Flexi.Invoice.InvoiceTable.Reference",
-              "FieldName": "Reference",
+              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.ProcedureDate",
+              "FieldName": "ProcedureDate",
               "IsMultiValue": false,
               "Type": "Text",
               "DeriveFieldsFormat": "",
@@ -80,8 +199,8 @@
               "Metadata": []
             },
             {
-              "FieldId": "Flexi.Invoice.InvoiceTable.Designation",
-              "FieldName": "Designation",
+              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.ToothSystem",
+              "FieldName": "ToothSystem",
               "IsMultiValue": false,
               "Type": "Text",
               "DeriveFieldsFormat": "",
@@ -90,8 +209,8 @@
               "Metadata": []
             },
             {
-              "FieldId": "Flexi.Invoice.InvoiceTable.Unit",
-              "FieldName": "Unit",
+              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.ProcedureCode",
+              "FieldName": "ProcedureCode",
               "IsMultiValue": false,
               "Type": "Text",
               "DeriveFieldsFormat": "",
@@ -100,8 +219,8 @@
               "Metadata": []
             },
             {
-              "FieldId": "Flexi.Invoice.InvoiceTable.Quantity",
-              "FieldName": "Quantity",
+              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.Qty",
+              "FieldName": "Qty",
               "IsMultiValue": false,
               "Type": "Text",
               "DeriveFieldsFormat": "",
@@ -110,8 +229,8 @@
               "Metadata": []
             },
             {
-              "FieldId": "Flexi.Invoice.InvoiceTable.UnitPrice",
-              "FieldName": "UnitPrice",
+              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.Description",
+              "FieldName": "Description",
               "IsMultiValue": false,
               "Type": "Text",
               "DeriveFieldsFormat": "",
@@ -120,8 +239,8 @@
               "Metadata": []
             },
             {
-              "FieldId": "Flexi.Invoice.InvoiceTable.Total",
-              "FieldName": "Total",
+              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.Fee",
+              "FieldName": "Fee",
               "IsMultiValue": false,
               "Type": "Text",
               "DeriveFieldsFormat": "",
@@ -134,8 +253,72 @@
           "Metadata": []
         },
         {
-          "FieldId": "Flexi.Invoice.PaymentTerms",
-          "FieldName": "PaymentTerms",
+          "FieldId": "Denistry.Claims.ADAAmericanDental.TotalFee",
+          "FieldName": "TotalFee",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Documents.MySko.TieflanGlass",
+      "Group": "Documents",
+      "Category": "MySko",
+      "Name": "TieflanGlass",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Documents.MySko.TieflanGlass.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Documents.MySko.TieflanGlass.LineItems",
+          "FieldName": "LineItems",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "Documents.MySko.TieflanGlass.LineItems.Decription",
+              "FieldName": "Decription",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Documents.MySko.TieflanGlass.LineItems.UnitPrice",
+              "FieldName": "UnitPrice",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Documents.MySko.TieflanGlass.Total",
+          "FieldName": "Total",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Documents.MySko.TieflanGlass.InvoiceNumber",
+          "FieldName": "InvoiceNumber",
           "IsMultiValue": false,
           "Type": "Text",
           "DeriveFieldsFormat": "",
@@ -362,13 +545,1295 @@
       ]
     },
     {
+      "DocumentTypeId": "Invoices.Construction.CrownCastle",
+      "Group": "Invoices",
+      "Category": "Construction",
+      "Name": "Crown Castle",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Invoices.Construction.CrownCastle.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Invoices.Construction.CrownCastle.OrderNumber",
+          "FieldName": "InvoiceNumber",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Construction.CrownCastle.OrderDate",
+          "FieldName": "InvoiceDate",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Construction.CrownCastle.TotalAmount",
+          "FieldName": "TotalAmount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Construction.CrownCastle.CompanyName",
+          "FieldName": "CompanyName",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Construction.CrownCastle.PaymentTerms",
+          "FieldName": "PaymentTerms",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Invoices.Construction.AmericanTowerCorp",
+      "Group": "Invoices",
+      "Category": "Construction",
+      "Name": "American Tower Corp.",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Invoices.Construction.AmericanTowerCorp.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Invoices.Construction.AmericanTowerCorp.OrderNumber",
+          "FieldName": "InvoiceNumber",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Construction.AmericanTowerCorp.OrderDate",
+          "FieldName": "InvoiceDate",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Construction.AmericanTowerCorp.TotalAmount",
+          "FieldName": "TotalAmount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Construction.AmericanTowerCorp.CompanyName",
+          "FieldName": "CompanyName",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Construction.AmericanTowerCorp.PaymentTerm",
+          "FieldName": "PaymentTerms",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Construction.AmericanTowerCorp.Address",
+          "FieldName": "Address",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Invoices.Endeavor.Petroplex",
+      "Group": "Invoices",
+      "Category": "Endeavor",
+      "Name": "Petroplex",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Invoices.Endeavor.Petroplex.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Invoices.Endeavor.Petroplex.BillAddress",
+          "FieldName": "BillAddress",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Petroplex.InvoiceDate",
+          "FieldName": "InvoiceDate",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Petroplex.InvoiceNumber",
+          "FieldName": "InvoiceNumber",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Petroplex.NetAmount",
+          "FieldName": "NetAmount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Petroplex.TaxAmount",
+          "FieldName": "TaxAmount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Petroplex.TotalAmount",
+          "FieldName": "TotalAmount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Petroplex.ShipAddress",
+          "FieldName": "ShipAddress",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Petroplex.LineItems",
+          "FieldName": "LineItems",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "Invoices.Endeavor.Petroplex.LineItems.LineQuantity",
+              "FieldName": "LineQuantity",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Endeavor.Petroplex.LineItems.LineDescription",
+              "FieldName": "LineDescription",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Endeavor.Petroplex.LineItems.LineUnitPrice",
+              "FieldName": "LineUnitPrice",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Endeavor.Petroplex.LineItems.LineAmount",
+              "FieldName": "LineAmount",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Invoices.Endeavor.Exxcel",
+      "Group": "Invoices",
+      "Category": "Endeavor",
+      "Name": "Exxcel",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Invoices.Endeavor.Exxcel.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Invoices.Endeavor.Exxcel.BillAddress",
+          "FieldName": "BillAddress",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Exxcel.InvoiceDate",
+          "FieldName": "InvoiceDate",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Exxcel.InvoiceNumber",
+          "FieldName": "InvoiceNumber",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Exxcel.TotalAmount",
+          "FieldName": "TotalAmount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Exxcel.ShipAddress",
+          "FieldName": "ShipAddress",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Endeavor.Exxcel.LineItems",
+          "FieldName": "LineItems",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "Invoices.Endeavor.Exxcel.LineItems.LineDescription",
+              "FieldName": "LineDescription",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Endeavor.Exxcel.LineItems.LineQuantity",
+              "FieldName": "LineQuantity",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Endeavor.Exxcel.LineItems.LineUnitPrice",
+              "FieldName": "LineUnitPrice",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Endeavor.Exxcel.LineItems.LineAmount",
+              "FieldName": "LineAmount",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Invoices.Sic.SavinodelBene",
+      "Group": "Invoices",
+      "Category": "Sic",
+      "Name": "Savino del Bene",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Invoices.Sic.SavinodelBene.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Invoices.Sic.SavinodelBene.InvoiceNumber",
+          "FieldName": "InvoiceNumber",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Sic.SavinodelBene.InvoiceDate",
+          "FieldName": "InvoiceDate",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Sic.SavinodelBene.TotalAmount",
+          "FieldName": "TotalAmount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Sic.SavinodelBene.CompanyName",
+          "FieldName": "CompanyName",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Sic.SavinodelBene.PaymentTerms",
+          "FieldName": "PaymentTerms",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Invoices.Software.SampleSoftware",
+      "Group": "Invoices",
+      "Category": "Software",
+      "Name": "SampleSoftware",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Invoices.Software.SampleSoftware.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Invoices.Software.SampleSoftware.InvoiceNumber",
+          "FieldName": "InvoiceNumber",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Software.SampleSoftware.InvoiceDate",
+          "FieldName": "InvoiceDate",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Software.SampleSoftware.TotalAmount",
+          "FieldName": "TotalAmount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Software.SampleSoftware.PaymentTerms",
+          "FieldName": "PaymentTerms",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Software.SampleSoftware.TableInfo",
+          "FieldName": "TableInfo",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "Invoices.Software.SampleSoftware.TableInfo.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Software.SampleSoftware.TableInfo.Total",
+              "FieldName": "Total",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Flexi.Invoice",
+      "Group": "Invoices",
+      "Category": "Telephone Carriers",
+      "Name": "Sprint_Invoice",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Flexi.Invoice.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Flexi.Invoice.InvoiceNumber",
+          "FieldName": "InvoiceNumber",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Flexi.Invoice.InvoiceDate",
+          "FieldName": "InvoiceDate",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Flexi.Invoice.Company",
+          "FieldName": "Company",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Flexi.Invoice.Company_ID",
+          "FieldName": "Company_ID",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Flexi.Invoice.TotalAmount",
+          "FieldName": "TotalAmount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Flexi.Invoice.InvoiceTable",
+          "FieldName": "InvoiceTable",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "Flexi.Invoice.InvoiceTable.Reference",
+              "FieldName": "Reference",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Flexi.Invoice.InvoiceTable.Designation",
+              "FieldName": "Designation",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Flexi.Invoice.InvoiceTable.Unit",
+              "FieldName": "Unit",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Flexi.Invoice.InvoiceTable.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Flexi.Invoice.InvoiceTable.UnitPrice",
+              "FieldName": "UnitPrice",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Flexi.Invoice.InvoiceTable.Total",
+              "FieldName": "Total",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Flexi.Invoice.PaymentTerms",
+          "FieldName": "PaymentTerms",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Invoices.TelephoneCarriers.CenturyLink",
+      "Group": "Invoices",
+      "Category": "Telephone Carriers",
+      "Name": "CenturyLink",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Invoices.TelephoneCarriers.CenturyLink.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Invoices.TelephoneCarriers.CenturyLink.InvoiceNumber",
+          "FieldName": "InvoiceNumber",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.TelephoneCarriers.CenturyLink.InvoiceDate",
+          "FieldName": "InvoiceDate",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.TelephoneCarriers.CenturyLink.PaymentTerms",
+          "FieldName": "PaymentTerms",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TotalAmount",
+          "FieldName": "TotalAmount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TableofData",
+          "FieldName": "TableofData",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TableofData.MonthlyCharges",
+              "FieldName": "MonthlyCharges",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TableofData.Qty",
+              "FieldName": "Qty",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TableofData.Rate",
+              "FieldName": "Rate",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TableofData.Amount",
+              "FieldName": "Amount",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Invoices.Varying.UnknownInvoice",
+      "Group": "Invoices",
+      "Category": "Varying",
+      "Name": "UnknownInvoice",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Invoices.Varying.UnknownInvoice.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.Currency",
+          "FieldName": "Currency",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ]
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.InvoiceNumber",
+          "FieldName": "InvoiceNumber",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Hotkey",
+              "Value": "w"
+            }
+          ]
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.InvoiceDate",
+          "FieldName": "InvoiceDate",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.PaymentTerms",
+          "FieldName": "PaymentTerms",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.TotalAmount",
+          "FieldName": "TotalAmount",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.TableofData",
+          "FieldName": "TableofData",
+          "IsMultiValue": false,
+          "Type": "Table",
+          "DeriveFieldsFormat": "",
+          "Components": [
+            {
+              "FieldId": "Invoices.Varying.UnknownInvoice.TableofData.Description",
+              "FieldName": "Description",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Varying.UnknownInvoice.TableofData.Quantity",
+              "FieldName": "Quantity",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Varying.UnknownInvoice.TableofData.UnitPrice",
+              "FieldName": "UnitPrice",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Varying.UnknownInvoice.TableofData.item-po-no",
+              "FieldName": "item-po-no",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Varying.UnknownInvoice.TableofData.line-no",
+              "FieldName": "line-no",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Varying.UnknownInvoice.TableofData.part-no",
+              "FieldName": "part-no",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Varying.UnknownInvoice.TableofData.billing-vat-no",
+              "FieldName": "billing-vat-no",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            },
+            {
+              "FieldId": "Invoices.Varying.UnknownInvoice.TableofData.line-amount",
+              "FieldName": "line-amount",
+              "IsMultiValue": false,
+              "Type": "Text",
+              "DeriveFieldsFormat": "",
+              "Components": [],
+              "SetValues": [],
+              "Metadata": []
+            }
+          ],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.Vendor",
+          "FieldName": "Vendor",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.PONumber",
+          "FieldName": "PONumber",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#279aab"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ]
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.BillTo",
+          "FieldName": "BillTo",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e474c6"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ]
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.ShipTo",
+          "FieldName": "ShipTo",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#2eb2d7"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "h"
+            }
+          ]
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.tax",
+          "FieldName": "tax",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#46b683"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ]
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.due-date",
+          "FieldName": "due-date",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#65a9c6"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ]
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.discount",
+          "FieldName": "discount",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#38deea"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ]
+        },
+        {
+          "FieldId": "Invoices.Varying.UnknownInvoice.shipping-charges",
+          "FieldName": "shipping-charges",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#7f95d4"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "g"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Labels.SeedLabels.Croplan",
+      "Group": "Labels",
+      "Category": "SeedLabels",
+      "Name": "Croplan",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Labels.SeedLabels.Croplan.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Labels.SeedLabels.Croplan.PureSeed",
+          "FieldName": "PureSeed",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Labels.SeedLabels.Croplan.Lot",
+          "FieldName": "Lot",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Labels.SeedLabels.Croplan.Germination",
+          "FieldName": "Germination",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Labels.SeedLabels.Croplan.HardSeed",
+          "FieldName": "HardSeed",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Labels.SeedLabels.Acceleron",
+      "Group": "Labels",
+      "Category": "SeedLabels",
+      "Name": "Acceleron",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Labels.SeedLabels.Acceleron.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Labels.SeedLabels.Acceleron.LOT",
+          "FieldName": "LOT",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Labels.SeedLabels.Acceleron.Maturity",
+          "FieldName": "Maturity",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Labels.SeedLabels.Acceleron.Variety",
+          "FieldName": "Variety",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Labels.SeedLabels.Acceleron.TotalLBS",
+          "FieldName": "TotalLBS",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Labels.SeedLabels.Bayer",
+      "Group": "Labels",
+      "Category": "SeedLabels",
+      "Name": "Bayer",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Labels.SeedLabels.Bayer.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Labels.SeedLabels.Bayer.Prof",
+          "FieldName": "Prof",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Labels.SeedLabels.Bayer.Trif",
+          "FieldName": "Trif",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Labels.SeedLabels.Bayer.EpaReg",
+          "FieldName": "EpaReg",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
+      "DocumentTypeId": "Labels.SeedLabels.eforage",
+      "Group": "Labels",
+      "Category": "SeedLabels",
+      "Name": "eforage",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "Labels.SeedLabels.eforage.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "Labels.SeedLabels.eforage.Name",
+          "FieldName": "Name",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Labels.SeedLabels.eforage.InvoiceDate",
+          "FieldName": "InvoiceDate",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        },
+        {
+          "FieldId": "Labels.SeedLabels.eforage.Total",
+          "FieldName": "Total",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": []
+        }
+      ]
+    },
+    {
       "DocumentTypeId": "UiPath.MLModel.Document",
       "Group": "UiPath",
       "Category": "MLModel",
       "Name": "Document",
-      "OptionalUniqueIdentifier": null,
+      "OptionalUniqueIdentifier": "",
       "TypeField": {
-        "FieldId": "UiPath.MLModel.DocumentDocumentType",
+        "FieldId": "UiPath.MLModel.Document.DocumentType",
         "FieldName": "Document Type"
       },
       "Fields": []
@@ -468,75 +1933,11 @@
       ]
     },
     {
-      "DocumentTypeId": "Documents.MySko.TieflanGlass",
-      "Group": "Documents",
-      "Category": "MySko",
-      "Name": "TieflanGlass",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Documents.MySko.TieflanGlass.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Documents.MySko.TieflanGlass.LineItems",
-          "FieldName": "LineItems",
-          "IsMultiValue": false,
-          "Type": "Table",
-          "DeriveFieldsFormat": "",
-          "Components": [
-            {
-              "FieldId": "Documents.MySko.TieflanGlass.LineItems.Decription",
-              "FieldName": "Decription",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Documents.MySko.TieflanGlass.LineItems.UnitPrice",
-              "FieldName": "UnitPrice",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            }
-          ],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Documents.MySko.TieflanGlass.Total",
-          "FieldName": "Total",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Documents.MySko.TieflanGlass.InvoiceNumber",
-          "FieldName": "InvoiceNumber",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
       "DocumentTypeId": "UiPath.MLModel.Receipts",
       "Group": "UiPath",
       "Category": "MLModel",
       "Name": "Receipts",
-      "OptionalUniqueIdentifier": null,
+      "OptionalUniqueIdentifier": "",
       "TypeField": {
         "FieldId": "UiPath.MLModel.Receipts.DocumentType",
         "FieldName": "Document Type"
@@ -650,9 +2051,9 @@
       "Group": "UiPath",
       "Category": "MLModel",
       "Name": "SampleMLDocument",
-      "OptionalUniqueIdentifier": null,
+      "OptionalUniqueIdentifier": "",
       "TypeField": {
-        "FieldId": "UiPath.MLModel.SampleMLDocumentDocumentType",
+        "FieldId": "UiPath.MLModel.SampleMLDocument.DocumentType",
         "FieldName": "Document Type"
       },
       "Fields": [
@@ -840,2032 +2241,11 @@
       ]
     },
     {
-      "DocumentTypeId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle",
-      "Group": "CertificateoFTitle",
-      "Category": "Oregon",
-      "Name": "CarTitle",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.CertificateNo",
-          "FieldName": "Certificate No.",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.TitleNumber",
-          "FieldName": "Title Number",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.DateIssued",
-          "FieldName": "Date Issued",
-          "IsMultiValue": false,
-          "Type": "Date",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.Manufacturer",
-          "FieldName": "Manufacturer",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.ModelYr",
-          "FieldName": "Make",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "CertificateoFTitle.Oregon.StateofOregonCertificateofTitle.Year",
-          "FieldName": "Year",
-          "IsMultiValue": false,
-          "Type": "Number",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "CertificateoFTitle.Oregon.BoatTitle",
-      "Group": "CertificateoFTitle",
-      "Category": "Oregon",
-      "Name": "BoatTitle",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "CertificateoFTitle.Oregon.BoatTitle.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "CertificateoFTitle.Oregon.BoatTitle.CertNo",
-          "FieldName": "Cert No.",
-          "IsMultiValue": false,
-          "Type": "Number",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "CertificateoFTitle.Oregon.BoatTitle.TitleNumber",
-          "FieldName": "TitleNumber",
-          "IsMultiValue": false,
-          "Type": "Number",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Invoices.Construction.CrownCastle",
-      "Group": "Invoices",
-      "Category": "Construction",
-      "Name": "Crown Castle",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Invoices.Construction.CrownCastle.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Invoices.Construction.CrownCastle.OrderNumber",
-          "FieldName": "InvoiceNumber",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Construction.CrownCastle.OrderDate",
-          "FieldName": "InvoiceDate",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Construction.CrownCastle.TotalAmount",
-          "FieldName": "TotalAmount",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Construction.CrownCastle.CompanyName",
-          "FieldName": "CompanyName",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Construction.CrownCastle.PaymentTerms",
-          "FieldName": "PaymentTerms",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Invoices.Construction.AmericanTowerCorp",
-      "Group": "Invoices",
-      "Category": "Construction",
-      "Name": "American Tower Corp.",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Invoices.Construction.AmericanTowerCorp.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Invoices.Construction.AmericanTowerCorp.OrderNumber",
-          "FieldName": "InvoiceNumber",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Construction.AmericanTowerCorp.OrderDate",
-          "FieldName": "InvoiceDate",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Construction.AmericanTowerCorp.TotalAmount",
-          "FieldName": "TotalAmount",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Construction.AmericanTowerCorp.CompanyName",
-          "FieldName": "CompanyName",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Construction.AmericanTowerCorp.PaymentTerm",
-          "FieldName": "PaymentTerms",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Construction.AmericanTowerCorp.Address",
-          "FieldName": "Address",
-          "IsMultiValue": false,
-          "Type": "Address",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Invoices.Software.SampleSoftware",
-      "Group": "Invoices",
-      "Category": "Software",
-      "Name": "SampleSoftware",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Invoices.Software.SampleSoftware.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Invoices.Software.SampleSoftware.InvoiceNumber",
-          "FieldName": "InvoiceNumber",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Software.SampleSoftware.InvoiceDate",
-          "FieldName": "InvoiceDate",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Software.SampleSoftware.TotalAmount",
-          "FieldName": "TotalAmount",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Software.SampleSoftware.PaymentTerms",
-          "FieldName": "PaymentTerms",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Software.SampleSoftware.TableInfo",
-          "FieldName": "TableInfo",
-          "IsMultiValue": false,
-          "Type": "Table",
-          "DeriveFieldsFormat": "",
-          "Components": [
-            {
-              "FieldId": "Invoices.Software.SampleSoftware.TableInfo.Description",
-              "FieldName": "Description",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Invoices.Software.SampleSoftware.TableInfo.Total",
-              "FieldName": "Total",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            }
-          ],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Invoices.Varying.UnknownInvoice",
-      "Group": "Invoices",
-      "Category": "Varying",
-      "Name": "UnknownInvoice",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Invoices.Varying.UnknownInvoice.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Invoices.Varying.UnknownInvoice.InvoiceNumber",
-          "FieldName": "InvoiceNumber",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "RequiresReference",
-              "Value": "true"
-            }
-          ]
-        },
-        {
-          "FieldId": "Invoices.Varying.UnknownInvoice.InvoiceDate",
-          "FieldName": "InvoiceDate",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "RequiresReference",
-              "Value": "true"
-            }
-          ]
-        },
-        {
-          "FieldId": "Invoices.Varying.UnknownInvoice.PaymentTerms",
-          "FieldName": "PaymentTerms",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "RequiresReference",
-              "Value": "true"
-            }
-          ]
-        },
-        {
-          "FieldId": "Invoices.Varying.UnknownInvoice.TotalAmount",
-          "FieldName": "TotalAmount",
-          "IsMultiValue": false,
-          "Type": "Number",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "RequiresReference",
-              "Value": "true"
-            }
-          ]
-        },
-        {
-          "FieldId": "Invoices.Varying.UnknownInvoice.TableofData",
-          "FieldName": "TableofData",
-          "IsMultiValue": false,
-          "Type": "Table",
-          "DeriveFieldsFormat": "",
-          "Components": [
-            {
-              "FieldId": "Invoices.Varying.UnknownInvoice.TableofData.Description",
-              "FieldName": "Description",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": [
-                {
-                  "Key": "RequiresReference",
-                  "Value": "true"
-                }
-              ]
-            },
-            {
-              "FieldId": "Invoices.Varying.UnknownInvoice.TableofData.Quantity",
-              "FieldName": "Quantity",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": [
-                {
-                  "Key": "RequiresReference",
-                  "Value": "true"
-                }
-              ]
-            },
-            {
-              "FieldId": "Invoices.Varying.UnknownInvoice.TableofData.UnitPrice",
-              "FieldName": "UnitPrice",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": [
-                {
-                  "Key": "RequiresReference",
-                  "Value": "true"
-                }
-              ]
-            }
-          ],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "RequiresReference",
-              "Value": "true"
-            }
-          ]
-        },
-        {
-          "FieldId": "Invoices.Varying.UnknownInvoice.Vendor",
-          "FieldName": "Vendor",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": [
-            {
-              "Key": "RequiresReference",
-              "Value": "true"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Invoices.TelephoneCarriers.CenturyLink",
-      "Group": "Invoices",
-      "Category": "Telephone Carriers",
-      "Name": "CenturyLink",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Invoices.TelephoneCarriers.CenturyLink.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Invoices.TelephoneCarriers.CenturyLink.InvoiceNumber",
-          "FieldName": "InvoiceNumber",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.TelephoneCarriers.CenturyLink.InvoiceDate",
-          "FieldName": "InvoiceDate",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.TelephoneCarriers.CenturyLink.PaymentTerms",
-          "FieldName": "PaymentTerms",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TotalAmount",
-          "FieldName": "TotalAmount",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TableofData",
-          "FieldName": "TableofData",
-          "IsMultiValue": false,
-          "Type": "Table",
-          "DeriveFieldsFormat": "",
-          "Components": [
-            {
-              "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TableofData.MonthlyCharges",
-              "FieldName": "MonthlyCharges",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TableofData.Qty",
-              "FieldName": "Qty",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TableofData.Rate",
-              "FieldName": "Rate",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Invoices.TelephoneCarriers.CenturyLink.TableofData.Amount",
-              "FieldName": "Amount",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            }
-          ],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Invoices.Endeavor.Petroplex",
-      "Group": "Invoices",
-      "Category": "Endeavor",
-      "Name": "Petroplex",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Invoices.Endeavor.Petroplex.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Invoices.Endeavor.Petroplex.BillAddress",
-          "FieldName": "BillAddress",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Petroplex.InvoiceDate",
-          "FieldName": "InvoiceDate",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Petroplex.InvoiceNumber",
-          "FieldName": "InvoiceNumber",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Petroplex.NetAmount",
-          "FieldName": "NetAmount",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Petroplex.TaxAmount",
-          "FieldName": "TaxAmount",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Petroplex.TotalAmount",
-          "FieldName": "TotalAmount",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Petroplex.ShipAddress",
-          "FieldName": "ShipAddress",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Petroplex.LineItems",
-          "FieldName": "LineItems",
-          "IsMultiValue": false,
-          "Type": "Table",
-          "DeriveFieldsFormat": "",
-          "Components": [
-            {
-              "FieldId": "Invoices.Endeavor.Petroplex.LineItems.LineQuantity",
-              "FieldName": "LineQuantity",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Invoices.Endeavor.Petroplex.LineItems.LineDescription",
-              "FieldName": "LineDescription",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Invoices.Endeavor.Petroplex.LineItems.LineUnitPrice",
-              "FieldName": "LineUnitPrice",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Invoices.Endeavor.Petroplex.LineItems.LineAmount",
-              "FieldName": "LineAmount",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            }
-          ],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Invoices.Endeavor.Exxcel",
-      "Group": "Invoices",
-      "Category": "Endeavor",
-      "Name": "Exxcel",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Invoices.Endeavor.Exxcel.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Invoices.Endeavor.Exxcel.BillAddress",
-          "FieldName": "BillAddress",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Exxcel.InvoiceDate",
-          "FieldName": "InvoiceDate",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Exxcel.InvoiceNumber",
-          "FieldName": "InvoiceNumber",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Exxcel.TotalAmount",
-          "FieldName": "TotalAmount",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Exxcel.ShipAddress",
-          "FieldName": "ShipAddress",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Endeavor.Exxcel.LineItems",
-          "FieldName": "LineItems",
-          "IsMultiValue": false,
-          "Type": "Table",
-          "DeriveFieldsFormat": "",
-          "Components": [
-            {
-              "FieldId": "Invoices.Endeavor.Exxcel.LineItems.LineDescription",
-              "FieldName": "LineDescription",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Invoices.Endeavor.Exxcel.LineItems.LineQuantity",
-              "FieldName": "LineQuantity",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Invoices.Endeavor.Exxcel.LineItems.LineUnitPrice",
-              "FieldName": "LineUnitPrice",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Invoices.Endeavor.Exxcel.LineItems.LineAmount",
-              "FieldName": "LineAmount",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            }
-          ],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Denistry.Claims.ADAAmericanDental",
-      "Group": "Denistry",
-      "Category": "Claims",
-      "Name": "ADA American Dental",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Denistry.Claims.ADAAmericanDental.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Denistry.Claims.ADAAmericanDental.InsuranceCompany",
-          "FieldName": "InsuranceCompany",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService",
-          "FieldName": "RecordofService",
-          "IsMultiValue": false,
-          "Type": "Table",
-          "DeriveFieldsFormat": "",
-          "Components": [
-            {
-              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.ProcedureDate",
-              "FieldName": "ProcedureDate",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.ToothSystem",
-              "FieldName": "ToothSystem",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.ProcedureCode",
-              "FieldName": "ProcedureCode",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.Qty",
-              "FieldName": "Qty",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.Description",
-              "FieldName": "Description",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Denistry.Claims.ADAAmericanDental.RecordofService.Fee",
-              "FieldName": "Fee",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            }
-          ],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Denistry.Claims.ADAAmericanDental.TotalFee",
-          "FieldName": "TotalFee",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Labels.SeedLabels.Croplan",
-      "Group": "Labels",
-      "Category": "SeedLabels",
-      "Name": "Croplan",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Labels.SeedLabels.Croplan.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Labels.SeedLabels.Croplan.PureSeed",
-          "FieldName": "PureSeed",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Labels.SeedLabels.Croplan.Lot",
-          "FieldName": "Lot",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Labels.SeedLabels.Croplan.Germination",
-          "FieldName": "Germination",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Labels.SeedLabels.Croplan.HardSeed",
-          "FieldName": "HardSeed",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Labels.SeedLabels.Acceleron",
-      "Group": "Labels",
-      "Category": "SeedLabels",
-      "Name": "Acceleron",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Labels.SeedLabels.Acceleron.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Labels.SeedLabels.Acceleron.LOT",
-          "FieldName": "LOT",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Labels.SeedLabels.Acceleron.Maturity",
-          "FieldName": "Maturity",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Labels.SeedLabels.Acceleron.Variety",
-          "FieldName": "Variety",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Labels.SeedLabels.Acceleron.TotalLBS",
-          "FieldName": "TotalLBS",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Labels.SeedLabels.Bayer",
-      "Group": "Labels",
-      "Category": "SeedLabels",
-      "Name": "Bayer",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Labels.SeedLabels.Bayer.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Labels.SeedLabels.Bayer.Prof",
-          "FieldName": "Prof",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Labels.SeedLabels.Bayer.Trif",
-          "FieldName": "Trif",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Labels.SeedLabels.Bayer.EpaReg",
-          "FieldName": "EpaReg",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Labels.SeedLabels.eforage",
-      "Group": "Labels",
-      "Category": "SeedLabels",
-      "Name": "eforage",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Labels.SeedLabels.eforage.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Labels.SeedLabels.eforage.Name",
-          "FieldName": "Name",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Labels.SeedLabels.eforage.InvoiceDate",
-          "FieldName": "InvoiceDate",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Labels.SeedLabels.eforage.Total",
-          "FieldName": "Total",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Adaugio.MedicalDoc.AthenaHealth",
-      "Group": "Adaugio",
-      "Category": "MedicalDoc",
-      "Name": "AthenaHealth",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Adaugio.MedicalDoc.AthenaHealth.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Adaugio.MedicalDoc.AthenaHealth.PatientName",
-          "FieldName": "PatientName",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Adaugio.MedicalDoc.AthenaHealth.DateofBirth",
-          "FieldName": "DateofBirth",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Adaugio.MedicalDoc.AthenaHealth.Sex",
-          "FieldName": "Sex",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Adaugio.MedicalDoc.AthenaHealth.ICD-10",
-          "FieldName": "ICD-10",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Invoices.Sic.SavinodelBene",
-      "Group": "Invoices",
-      "Category": "Sic",
-      "Name": "Savino del Bene",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Invoices.Sic.SavinodelBene.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Invoices.Sic.SavinodelBene.InvoiceNumber",
-          "FieldName": "InvoiceNumber",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Sic.SavinodelBene.InvoiceDate",
-          "FieldName": "InvoiceDate",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Sic.SavinodelBene.TotalAmount",
-          "FieldName": "TotalAmount",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Sic.SavinodelBene.CompanyName",
-          "FieldName": "CompanyName",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Invoices.Sic.SavinodelBene.PaymentTerms",
-          "FieldName": "PaymentTerms",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Insurance.ACORD.Acord-125",
-      "Group": "Insurance",
-      "Category": "ACORD",
-      "Name": "Acord-125-393",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Insurance.ACORD.Acord-125.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.Producer",
-          "FieldName": "Producer",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.Phone",
-          "FieldName": "Phone",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.Carrier",
-          "FieldName": "Carrier",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.Underwriter",
-          "FieldName": "Underwriter",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.Attached-Property",
-          "FieldName": "Attached-Property",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.Attached-Equipment",
-          "FieldName": "Attached-Equipment",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.Attached-CGA",
-          "FieldName": "Attached-CGA",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.Attached-Umbrella",
-          "FieldName": "Attached-Umbrella",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.Quote-Submission",
-          "FieldName": "Quote-Submission",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.Start-Date",
-          "FieldName": "Start-Date",
-          "IsMultiValue": false,
-          "Type": "Date",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.ExpiryDate",
-          "FieldName": "Expiry Date",
-          "IsMultiValue": false,
-          "Type": "Date",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.ApplicantInformation",
-          "FieldName": "Applicant Information",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.InspectionContact",
-          "FieldName": "Inspection Contact",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.AccountingContact",
-          "FieldName": "Accounting Contact",
-          "IsMultiValue": false,
-          "Type": "Name",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125.PremisesInformation",
-          "FieldName": "Premises Information",
-          "IsMultiValue": false,
-          "Type": "Table",
-          "DeriveFieldsFormat": "",
-          "Components": [
-            {
-              "FieldId": "Insurance.ACORD.Acord-125.PremisesInformation.Loc",
-              "FieldName": "Loc",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-125.PremisesInformation.Bld",
-              "FieldName": "Bld",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-125.PremisesInformation.Address",
-              "FieldName": "Address",
-              "IsMultiValue": false,
-              "Type": "Address",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-125.PremisesInformation.City-Limits",
-              "FieldName": "City-Limits",
-              "IsMultiValue": false,
-              "Type": "Boolean",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-125.PremisesInformation.Yr-built",
-              "FieldName": "Yr-built",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-125.PremisesInformation.Part-Ocupied",
-              "FieldName": "Part-Ocupied",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-125.PremisesInformation.Interest",
-              "FieldName": "Interest",
-              "IsMultiValue": false,
-              "Type": "Boolean",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            }
-          ],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Insurance.ACORD.Acord-126",
-      "Group": "Insurance",
-      "Category": "ACORD",
-      "Name": "Acord-126",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Insurance.ACORD.Acord-126.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.Agency",
-          "FieldName": "Agency",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.Carrier",
-          "FieldName": "Carrier",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.Date",
-          "FieldName": "Date",
-          "IsMultiValue": false,
-          "Type": "Date",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.PolicyNumber",
-          "FieldName": "Policy Number",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.Effective-Date",
-          "FieldName": "Effective-Date",
-          "IsMultiValue": false,
-          "Type": "Date",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.Applicant",
-          "FieldName": "Applicant",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.Coverages-CGA",
-          "FieldName": "Coverages-CGA",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.Coverages-Occurence",
-          "FieldName": "Coverages-Occurrence",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.L-GeneralAgrr",
-          "FieldName": "L-GeneralAgrr",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.L-Products",
-          "FieldName": "L-Products",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.L-Personal",
-          "FieldName": "L-Personal",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.L-EachOcc",
-          "FieldName": "L-EachOcc",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.L-Damage",
-          "FieldName": "L-Damage",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.L-Medical",
-          "FieldName": "L-Medical",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards",
-          "FieldName": "Schedule-Hazards",
-          "IsMultiValue": false,
-          "Type": "Table",
-          "DeriveFieldsFormat": "",
-          "Components": [
-            {
-              "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards.Loc",
-              "FieldName": "Loc",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards.Haz",
-              "FieldName": "Haz",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards.ClassCode",
-              "FieldName": "Class Code",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards.PremiumBasis",
-              "FieldName": "Premium Basis",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards.Exposure",
-              "FieldName": "Exposure",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards.Terr",
-              "FieldName": "Terr",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards.Rate-Prem",
-              "FieldName": "Rate-Prem",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards.Rate-Products",
-              "FieldName": "Rate-Products",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards.Premium-Prem",
-              "FieldName": "Premium-Prem",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards.Premium-Products",
-              "FieldName": "Premium-Products",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-126.Schedule-Hazards.Classification",
-              "FieldName": "Classification",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            }
-          ],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.Claims-excluded",
-          "FieldName": "Claims-excluded",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-126.Tail-Coverage-Purchased",
-          "FieldName": "Tail-Coverage-Purchased",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
-      "DocumentTypeId": "Insurance.ACORD.Acord-125_1",
-      "Group": "Insurance",
-      "Category": "ACORD",
-      "Name": "Acord-125",
-      "OptionalUniqueIdentifier": null,
-      "TypeField": {
-        "FieldId": "Insurance.ACORD.Acord-125.DocumentType",
-        "FieldName": "Document Type"
-      },
-      "Fields": [
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Producer",
-          "FieldName": "Producer",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Carrier",
-          "FieldName": "Carrier",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Underwriter",
-          "FieldName": "Underwriter",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Attached-Property",
-          "FieldName": "Attached-Property",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Attached-Equipment",
-          "FieldName": "Attached-Equipment",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Attached-CGA",
-          "FieldName": "Attached-CGA",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Attached-Umbrella",
-          "FieldName": "Attached-Umbrella",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Quote-Submission",
-          "FieldName": "Quote-Submission",
-          "IsMultiValue": false,
-          "Type": "Boolean",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Start-Date",
-          "FieldName": "Start-Date",
-          "IsMultiValue": false,
-          "Type": "Date",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.ExpiryDate",
-          "FieldName": "Expiry Date",
-          "IsMultiValue": false,
-          "Type": "Date",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.ApplicantInformation",
-          "FieldName": "Applicant Information",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Phone",
-          "FieldName": "Phone",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.PremisesInformation",
-          "FieldName": "Premises Information",
-          "IsMultiValue": false,
-          "Type": "Table",
-          "DeriveFieldsFormat": "",
-          "Components": [
-            {
-              "FieldId": "Insurance.ACORD.Acord-125_1.PremisesInformation.Loc",
-              "FieldName": "Loc",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-125_1.PremisesInformation.Bld",
-              "FieldName": "Bld",
-              "IsMultiValue": false,
-              "Type": "Text",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-125_1.PremisesInformation.Address",
-              "FieldName": "Address",
-              "IsMultiValue": false,
-              "Type": "Address",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-125_1.PremisesInformation.City-Limits",
-              "FieldName": "City-Limits",
-              "IsMultiValue": false,
-              "Type": "Boolean",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            },
-            {
-              "FieldId": "Insurance.ACORD.Acord-125_1.PremisesInformation.Interest",
-              "FieldName": "Interest",
-              "IsMultiValue": false,
-              "Type": "Boolean",
-              "DeriveFieldsFormat": "",
-              "Components": [],
-              "SetValues": [],
-              "Metadata": []
-            }
-          ],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Contact1Type",
-          "FieldName": "Contact 1 Type",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Contact1Name",
-          "FieldName": "Contact 1 Name",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Contact1Phone",
-          "FieldName": "Contact 1 Phone",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Contact2Type",
-          "FieldName": "Contact 2 Type",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Contact2Name",
-          "FieldName": "Contact 2 Name",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        },
-        {
-          "FieldId": "Insurance.ACORD.Acord-125_1.Contact2Phone",
-          "FieldName": "Contact 2 Phone",
-          "IsMultiValue": false,
-          "Type": "Text",
-          "DeriveFieldsFormat": "",
-          "Components": [],
-          "SetValues": [],
-          "Metadata": []
-        }
-      ]
-    },
-    {
       "DocumentTypeId": "UtilityBills.Gas.GasTotal",
       "Group": "Utility Bills",
       "Category": "Gas",
       "Name": "GasTotal",
-      "OptionalUniqueIdentifier": null,
+      "OptionalUniqueIdentifier": "",
       "TypeField": {
         "FieldId": "UtilityBills.Gas.GasTotal.DocumentType",
         "FieldName": "Document Type"

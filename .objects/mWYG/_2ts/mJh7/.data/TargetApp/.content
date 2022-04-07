@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-16"?>
-<TargetApp BrowserType="IE" ContentHash="J6teLkRNSEe9pUH9gnAzCg" Selector="&lt;html title='ACME System 1 - Dashboard'/&gt;" Url="https://acme-test.uipath.com/" xmlns="http://schemas.uipath.com/workflow/activities/uix">
-  <imageRef attrName="IconBase64" xmlns="">08ggwxKpb-kyf8_a2xZ5Ryg</imageRef>
-  <imageRef attrName="InformativeScreenshot" originalValue="5c2297127271a89115ce847fe87f1102.png" xmlns="">0JE68wO0adEWBB0S_CshaEQ</imageRef>
+<TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="93uhmempiUy-TJjQ8FpdsA" Reference="bugZPJhYIE6H-JeT3uEzBg/mJh7rBZUZEenJcq6RQ4PBA" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Dashboard'/&gt;" Url="https://acme-test.uipath.com/home" xmlns="http://schemas.uipath.com/workflow/activities/uix">
+  <imageRef attrName="IconBase64" xmlns="">0Nx47xDH8MEuzXwtiiJOPfw</imageRef>
+  <imageRef attrName="InformativeScreenshot" originalValue="dd06d2c8b51f3fcb02ced0793ba569c8.png" xmlns="">0XAuwV45B90eQEHDMo1y0lg</imageRef>
 </TargetApp>
